@@ -1,0 +1,46 @@
+add_subdirectory(geometry)
+add_subdirectory(graphics)
+add_subdirectory(properties)
+
+target_sources(lunasvg 
+PRIVATE
+    "${CMAKE_CURRENT_LIST_DIR}/rendercontext.cpp"
+    "${CMAKE_CURRENT_LIST_DIR}/svganimationelement.cpp"
+    "${CMAKE_CURRENT_LIST_DIR}/svgdefselement.cpp"
+    "${CMAKE_CURRENT_LIST_DIR}/svgdocument.cpp"
+    "${CMAKE_CURRENT_LIST_DIR}/svgdocumentimpl.cpp"
+    "${CMAKE_CURRENT_LIST_DIR}/svgelement.cpp"
+    "${CMAKE_CURRENT_LIST_DIR}/svgelementhead.cpp"
+    "${CMAKE_CURRENT_LIST_DIR}/svgelementimpl.cpp"
+    "${CMAKE_CURRENT_LIST_DIR}/svgelementiter.cpp"
+    "${CMAKE_CURRENT_LIST_DIR}/svgelementtail.cpp"
+    "${CMAKE_CURRENT_LIST_DIR}/svgelementutils.cpp"
+    "${CMAKE_CURRENT_LIST_DIR}/svgfittoviewbox.cpp"
+    "${CMAKE_CURRENT_LIST_DIR}/svggeometryelement.cpp"
+    "${CMAKE_CURRENT_LIST_DIR}/svggradientelement.cpp"
+    "${CMAKE_CURRENT_LIST_DIR}/svggraphicselement.cpp"
+    "${CMAKE_CURRENT_LIST_DIR}/svglineargradientelement.cpp"
+    "${CMAKE_CURRENT_LIST_DIR}/svgpaintelement.cpp"
+    "${CMAKE_CURRENT_LIST_DIR}/svgparser.cpp"
+    "${CMAKE_CURRENT_LIST_DIR}/svggelement.cpp"
+    "${CMAKE_CURRENT_LIST_DIR}/svgpathelement.cpp"
+    "${CMAKE_CURRENT_LIST_DIR}/svgpolyelement.cpp"
+    "${CMAKE_CURRENT_LIST_DIR}/svgpolygonelement.cpp"
+    "${CMAKE_CURRENT_LIST_DIR}/svgpolylineelement.cpp"
+    "${CMAKE_CURRENT_LIST_DIR}/svgradialgradientelement.cpp"
+    "${CMAKE_CURRENT_LIST_DIR}/svgrectelement.cpp"
+    "${CMAKE_CURRENT_LIST_DIR}/svgcircleelement.cpp"
+    "${CMAKE_CURRENT_LIST_DIR}/svgellipseelement.cpp"
+    "${CMAKE_CURRENT_LIST_DIR}/svglineelement.cpp"
+    "${CMAKE_CURRENT_LIST_DIR}/svgrootelement.cpp"
+    "${CMAKE_CURRENT_LIST_DIR}/svgsvgelement.cpp"
+    "${CMAKE_CURRENT_LIST_DIR}/svgstopelement.cpp"
+    "${CMAKE_CURRENT_LIST_DIR}/svgurireference.cpp"
+    "${CMAKE_CURRENT_LIST_DIR}/svguseelement.cpp"
+    "${CMAKE_CURRENT_LIST_DIR}/svgsymbolelement.cpp"
+)
+
+target_include_directories(lunasvg
+PRIVATE
+    "${CMAKE_CURRENT_LIST_DIR}"
+)
